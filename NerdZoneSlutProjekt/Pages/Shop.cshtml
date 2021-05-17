@@ -1,6 +1,6 @@
 ﻿@{
     Layout = "~/Shared/_Layout.cshtml";
-    Page.Title = "Shop"
+    Page.Title = "Shop";
 }
 <!DOCTYPE html>
 <html>
@@ -8,6 +8,573 @@
     <title>Shop</title>
 </head>
 <body>
+    <main>
+        <!-- Shopping container -->
+        <div class="container">
 
+            <div class="row">
+                <div class="col-lg-4 mt-3 mb-4">
+
+                    <!-- Section: Categories -->
+                    <section>
+
+                        <h5 class="mb-3">Categories</h5>
+
+                        <div class="text-muted small text-uppercase mb-5">
+
+                            <p class="mb-3"><a href="#Manga" class="card-link-secondary">Manga</a></p>
+                            <p class="mb-3"><a href="#ComicBooks" class="card-link-secondary">Comic Books</a></p>
+                            <p class="mb-3"><a href="#Clothes" class="card-link-secondary">Clothes</a></p>
+                            <p class="mb-3"><a href="#Figures" class="card-link-secondary">Figures</a></p>
+                            <p class="mb-3"><a href="#AnimeVideo" class="card-link-secondary">Anime & Video</a></p>
+                        </div>
+
+                    </section>
+                    <!-- Section: Categories -->
+                    <!-- Section: Filters -->
+                    <section>
+
+                        <h5 class="mb-4">Filters</h5>
+
+                        <section class="mb-4">
+
+                            <div class="md-form md-outline mt-0 d-flex justify-content-between align-items-center">
+                                <input type="text" id="search12" class="form-control mb-0" placeholder="Search...">
+                                <a href="#!" class="btn btn-flat btn-md px-3 waves-effect"><i class="fas fa-search fa-lg"></i></a>
+                            </div>
+
+                        </section>
+
+                       
+                        <!-- Section: Price -->
+                        <section class="mb-4">
+
+                            <h6 class="font-weight-bold mb-3">Price</h6>
+
+                            <div class="form-check pl-0 mb-3">
+                                <input type="radio" class="form-check-input" id="under25" name="materialExampleRadios">
+                                <label class="form-check-label small text-uppercase card-link-secondary" for="under25">Under $5</label>
+                            </div>
+                            <div class="form-check pl-0 mb-3">
+                                <input type="radio" class="form-check-input" id="2550" name="materialExampleRadios">
+                                <label class="form-check-label small text-uppercase card-link-secondary" for="2550">$5 to $10</label>
+                            </div>
+                            <div class="form-check pl-0 mb-3">
+                                <input type="radio" class="form-check-input" id="50100" name="materialExampleRadios">
+                                <label class="form-check-label small text-uppercase card-link-secondary" for="50100">$10 to $15</label>
+                            </div>
+                            <div class="form-check pl-0 mb-3">
+                                <input type="radio" class="form-check-input" id="100200" name="materialExampleRadios">
+                                <label class="form-check-label small text-uppercase card-link-secondary" for="100200">$15 to $20</label>
+                            </div>
+                            <div class="form-check pl-0 mb-3">
+                                <input type="radio" class="form-check-input" id="200above" name="materialExampleRadios">
+                                <label class="form-check-label small text-uppercase card-link-secondary" for="200above">$20 &amp; Above</label>
+                            </div>
+                            <form>
+                                <div class="d-flex align-items-center mt-4 pb-1">
+                                    <div class="md-form md-outline my-0">
+                                        <input id="from" type="text" class="form-control mb-0">
+                                        <label for="form">$ Min</label>
+                                    </div>
+                                    <p class="px-2 mb-0 text-muted"> - </p>
+                                    <div class="md-form md-outline my-0">
+                                        <input id="to" type="text" class="form-control mb-0">
+                                        <label for="to">$ Max</label>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </section>
+                        <!-- Section: Price -->
+
+                    </section>
+                    <!-- Section: Filters -->
+
+                </div>
+                <div class="col-lg-8">
+
+                    <!-- Section: Block Content -->
+                    <section>
+
+                        <div class="row d-flex justify-content-around align-items-center mb-4">
+                            <div class="col-12 col-md-3 text-center text-md-left">
+                                <a href="#!" class="text-reset"><i class="fas fa-th-list fa-lg mr-1"></i></a>
+                                <a href="#!" class="text-reset"><i class="fas fa-th-large fa-lg"></i></a>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="d-flex flex-wrap">
+                                    <div class="select-outline position-relative w-100">
+                                        <div class="select-wrapper mdb-select md-outline md-form">
+                                            <span class="caret">▼</span><input type="text" class="select-dropdown form-control" readonly="" required="" data-activates="select-options-1cc80e9e-4e0c-45ce-93e1-54d42a117d99" value="" role="listbox" aria-multiselectable="false" aria-disabled="false" aria-required="false" aria-haspopup="true" aria-expanded="false"><ul id="select-options-1cc80e9e-4e0c-45ce-93e1-54d42a117d99" class="dropdown-content select-dropdown w-100" style="display: none; width: 286.656px; position: absolute; top: 0px; left: 0px; opacity: 1;"><li class="disabled" role="option" aria-selected="false" aria-disabled="true"><span class="filtrable "> Sort by    </span></li><li class="" role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> Popularity    </span></li><li class="active selected" role="option" aria-selected="true" aria-disabled="false"><span class="filtrable "> Price: lowest to highest    </span></li><li class="" role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> Price: highest to lowest    </span></li><li class="" role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> Newest    </span></li><li class="" role="option" aria-selected="false" aria-disabled="false"><span class="filtrable "> Most rated    </span></li></ul><select class="mdb-select md-outline md-form initialized" data-stop-refresh="true">
+                                                <option value="" disabled="" selected="">Sort by</option>
+                                                <option value="1">Popularity</option>
+                                                <option value="2">Price: lowest to highest</option>
+                                                <option value="3">Price: highest to lowest</option>
+                                                <option value="4">Newest</option>
+                                                <option value="5">Most rated</option>
+                                            </select>
+                                        </div>
+                                        <label class="">Sorting</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center float-md-right mb-0">
+                                        <li class="page-item"><a class="page-link waves-effect waves-effect"><i class="fas fa-chevron-left"></i></a></li>
+                                        <li class="page-item active"><a class="page-link waves-effect waves-effect">1</a></li>
+                                        <li class="page-item"><a class="page-link waves-effect waves-effect">2</a></li>
+                                        <li class="page-item"><a class="page-link waves-effect waves-effect">3</a></li>
+                                        <li class="page-item"><a class="page-link waves-effect waves-effect"><i class="fas fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- Section: Block Content -->
+                    <!--Section Products-->
+
+                        <!-- Grid row Products -->
+                    <div class="row mb-4">
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-4 mb-4" id="Manga">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/Naruto_Vol_1.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">Naruto Vol.1</h5>
+                                    <h5>Paperback</h5>
+                                    <h6 class="mb-3"> $10 </h6>
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/Hunter_X_Hunter Vol 1.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">Hunter X Hunter Vol.1</h5>
+                                    <h5>Paperback</h5>
+                                    <h6 class="mb-3">$10</h6>
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/A_Silent_voice_box_set.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">Silent Voice Box Set</h5>
+                                    <h5>Bundle</h5>
+                                    <h6 class="mb-3">$45</h6>
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+
+                        <div class="col-md-6 col-lg-4 mb-4" id="ComicBooks">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/Batman_Rebirth_Vol_1.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">Batman Rebirth Vol.1</h5>
+                                    <h5>Paperback</h5>
+                                    <h6 class="mb-3">$7</h6>
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/Flash_Rebirth_Vol_1.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">Flash Rebirth Vol.1</h5>
+                                    <h5>Paperback</h5>
+                                    <h6 class="mb-3">$7</h6>
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/House_Powers_of_X_Complete_Collection.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">House/Powers Of X Complete</h5>
+                                    <h5>Hardcover</h5>
+                                    <h6 class="mb-3">$ 9.99</h6>
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-4 mb-4" id="Clothes">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/Attack_On_Titan_Hoodie.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">Attack On Titan Apparel</h5>
+                                    <h5>Hoodie</h5>
+                                    <h6 class="mb-3">$25</h6>
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/My_Hero_Academia_Tshirt.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">My Hero Academia Merch</h5>
+                                    <h5>T-Shirt</h5>
+                                    <h6 class="mb-3">$12</h6>
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/Pokemon_Cap.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">Pokemon Merch</h5>
+                                    <h5>Hat</h5>
+                                    <h6 class="mb-3">SALE<i class="fas fa-certificate"></i></h6>
+                                    <h6 class="mb-3">$5</h6>
+
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-4 mb-4" id="Figures">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/One_piece_collection.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">One Piece Characters</h5>
+                                    <h5>Figurine Bundle</h5>
+                                    <h6 class="mb-3">SPECIAL OFFER<i class="fas fa-certificate"></i></h6>
+                                    <h6 class="mb-3">$125</h6>
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/Itadori_Yuji_figure.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">Itadori Yuji (Jujutsu Kaisen)</h5>
+                                    <h5>Figurine</h5>
+                                    <h6 class="mb-3">$35</h6>
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+
+                            <!-- Card -->
+                            <div class="">
+
+                                <div class="view zoom z-depth-2 rounded">
+                                    <img class="img-fluid w-100" src="~/Images/Jotaro_Kujo_Jojo_figurine.jpg" alt="Sample">
+                                    <a href="#!">
+                                        <div class="mask waves-effect waves-light"></div>
+                                    </a>
+                                </div>
+
+                                <div class="text-center pt-4">
+
+                                    <h5 class="mb-0">Jotaro Kujo (Jojo's Bizarre Adventures)</h5>
+                                    <h5>Figurine</h5>
+                                    <h6 class="mb-3">$65</h6>
+                                    <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                    <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                         <div class="col-md-6 col-lg-4 mb-4" id="AnimeVideo">
+
+                        <!-- Card -->
+                        <div class="">
+
+                            <div class="view zoom z-depth-2 rounded">
+                                <img class="img-fluid w-100" src="~/Images/Mugen Train Blu Ray.jpg" alt="Sample">
+                                <a href="#!">
+                                    <div class="mask waves-effect waves-light"></div>
+                                </a>
+                            </div>
+
+                            <div class="text-center pt-4">
+
+                                <h5 class="mb-0">Demon Slayer Mugen Train</h5>
+                                <h5>Blu Ray</h5>
+                                <h6 class="mb-3">$30</h6>
+                                <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+
+                        <!-- Card -->
+                        <div class="">
+
+                            <div class="view zoom z-depth-2 rounded">
+                                <img class="img-fluid w-100" src="~/Images/Akira Blu Ray.jpg" alt="Sample">
+                                <a href="#!">
+                                    <div class="mask waves-effect waves-light"></div>
+                                </a>
+                            </div>
+
+                            <div class="text-center pt-4">
+
+                                <h5 class="mb-0">Akira 25th Anniversary</h5>
+                                <h5>Blu Ray</h5>
+                                <h6 class="mb-3">$25</h6>
+                                <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+
+                        <!-- Card -->
+                        <div class="">
+
+                            <div class="view zoom z-depth-2 rounded">
+                                <img class="img-fluid w-100" src="~/Images/Gintama_The_Movie.jpg" alt="Sample">
+                                <a href="#!">
+                                    <div class="mask waves-effect waves-light"></div>
+                                </a>
+                            </div>
+
+                            <div class="text-center pt-4">
+
+                                <h5 class="mb-0">Gintama The Movie</h5>
+                                <h5>Blu Ray</h5>
+                                <h6 class="mb-3">$10</h6>
+                                <button type="button" class="btn btn-secondary btn-sm mr-1 waves-effect waves-light"><i class="fas fa-cart-plus"></i></button>
+                                <button type="button" class="btn btn-info btn-sm waves-effect waves-light"><i class="fas fa-info-circle pr-2"></i>Details</button>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+
+                    </div>
+                    <!-- Grid column -->
+
+                    </div>
+                        <!-- Grid row Products -->
+
+
+                    <!--Section: Block Content-->
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
 </body>
 </html>

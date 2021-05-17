@@ -148,10 +148,25 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="CSS\StyleSheet.css" />
     <Content Include="Fonts\fontawesome-webfont.svg" />
-    <Content Include="Images\Demon-Slayer.jpg" />
-    <Content Include="Images\Blue Period Review.jpg" />
-    <Content Include="Images\One piece collection.jpg" />
+    <Content Include="Images\Akira Blu Ray.jpg" />
+    <Content Include="Images\A_Silent_voice_box_set.jpg" />
+    <Content Include="Images\Attack_On_Titan_Hoodie.jpg" />
+    <Content Include="Images\Batman_Rebirth_Vol_1.jpg" />
+    <Content Include="Images\Demon_Slayer.jpg" />
+    <Content Include="Images\Blue_Period_Review.jpg" />
+    <Content Include="Images\Flash_Rebirth_Vol_1.jpg" />
+    <Content Include="Images\Gintama_The_Movie.jpg" />
+    <Content Include="Images\House_Powers_of_X_Complete_Collection.jpg" />
+    <Content Include="Images\Hunter_X_Hunter Vol 1.jpg" />
+    <Content Include="Images\Itadori_Yuji_figure.jpg" />
+    <Content Include="Images\Jotaro_Kujo_Jojo_figurine.jpg" />
+    <Content Include="Images\Mugen Train Blu Ray.jpg" />
+    <Content Include="Images\My_Hero_Academia_Tshirt.jpg" />
+    <Content Include="Images\Naruto_Vol_1.jpg" />
+    <Content Include="Images\One_piece_collection.jpg" />
+    <Content Include="Images\Pokemon_Cap.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -193,8 +208,9 @@
     <Content Include="Fonts\fontawesome-webfont.eot" />
     <Content Include="Pages\Shop.cshtml" />
     <Content Include="Pages\News.cshtml" />
-    <Content Include="Pages\About Us.cshtml" />
-    <Content Include="Pages\Contact us.cshtml" />
+    <Content Include="Pages\About_Us.cshtml" />
+    <Content Include="Pages\Contact_Us.cshtml" />
+    <Content Include="Documents\Målgruppsanalys.docx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -311,9 +327,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CSS\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
