@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/a46e26c46f.js" crossorigin="anonymous"></script>
     <script src="~/Scripts/jquery-3.4.1.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- Renders page Title and scripts for respective websites--> 
     <title>@Page.Title</title>
     @RenderSection("head", required: false)
 </head>
@@ -18,7 +19,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <!-- Navigation Bar -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -26,12 +27,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="~/Pages/Shop.cshtml">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Pages/News.cshtml">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Pages/About_Us.cshtml">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="~/Pages/Contact_Us.cshtml">Contact Us</a>
@@ -43,13 +38,15 @@
                     <button class="btn bg-secondary my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
-
+            <!-- Navigation Bar -->
         </nav>
     </header>
     <main>
+        <!-- Renders body in main -->
         @RenderBody()
     </main>
     <div class="flex-lg-fill clearfix ">
+        <!-- Footer -->
         <footer class="text-center text-lg-start text-white"
                 style="background-color: #929fba">
             <!-- Grid container -->
@@ -64,7 +61,7 @@
                                 Nerdzone
                             </h6>
                             <p>
-                               Nerdzone offers news & views about Anime, Manga, Comic Books, and Japanese Pop-culture from a Swedish perspective.
+                                Nerdzone offers news & views about Anime, Manga, Comic Books, and Japanese Pop-culture from a Swedish perspective.
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -168,6 +165,7 @@
             </div>
             <!-- Copyright -->
         </footer>
+        <!-- Footer -->
     </div>
 </body>
 </html>
